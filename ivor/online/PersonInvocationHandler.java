@@ -12,7 +12,7 @@ public class PersonInvocationHandler implements InvocationHandler {
   }
 
   @Override
-  public String invoke(Object proxy, Method method, Object[] args) throws Throwable {
+  public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
     //PRE PROCESSING
     System.out.println("Calling Method " + method.getName() + "()");
